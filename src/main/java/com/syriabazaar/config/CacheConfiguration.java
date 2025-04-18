@@ -50,6 +50,13 @@ public class CacheConfiguration {
             createCache(cm, com.syriabazaar.domain.User.class.getName());
             createCache(cm, com.syriabazaar.domain.Authority.class.getName());
             createCache(cm, com.syriabazaar.domain.User.class.getName() + ".authorities");
+            createCache(cm, com.syriabazaar.domain.Brand.class.getName());
+            createCache(cm, com.syriabazaar.domain.CarModel.class.getName());
+            createCache(cm, com.syriabazaar.domain.CarType.class.getName());
+            createCache(cm, com.syriabazaar.domain.City.class.getName());
+            createCache(cm, com.syriabazaar.domain.Seller.class.getName());
+            createCache(cm, com.syriabazaar.domain.Car.class.getName());
+            createCache(cm, com.syriabazaar.domain.Review.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }

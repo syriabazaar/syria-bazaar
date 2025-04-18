@@ -1,0 +1,23 @@
+{
+  "annotations": {
+    "changelogDate": "20250418201827"
+  },
+  "applications": "*",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "name": "CarModel",
+  "relationships": [
+    {
+      "otherEntityName": "brand",
+      "relationshipName": "brand",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "no"
+}

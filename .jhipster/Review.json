@@ -1,0 +1,38 @@
+{
+  "annotations": {
+    "changelogDate": "20250418201832"
+  },
+  "applications": "*",
+  "fields": [
+    {
+      "fieldName": "createdAt",
+      "fieldType": "Instant",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "revVal",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "revTxt",
+      "fieldType": "String"
+    }
+  ],
+  "name": "Review",
+  "pagination": "pagination",
+  "relationships": [
+    {
+      "otherEntityName": "seller",
+      "relationshipName": "fromUser",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "seller",
+      "relationshipName": "toUser",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "no"
+}

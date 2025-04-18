@@ -1,0 +1,16 @@
+{
+  "annotations": {
+    "changelogDate": "20250418201828"
+  },
+  "applications": "*",
+  "fields": [
+    {
+      "fieldName": "typeName",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "name": "CarType",
+  "relationships": [],
+  "searchEngine": "no"
+}

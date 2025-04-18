@@ -1,0 +1,83 @@
+entity Brand {
+  name String required unique
+}
+
+entity CarModel {
+  name String required
+}
+
+
+
+entity CarType {
+  typeName String required
+}
+
+entity City {
+  name String required
+}
+
+entity Seller {
+  name String required
+  address String required
+  mobileNo String
+  whatsApp String
+  facebook String
+  insta String
+}
+entity Car {
+  year Integer min(1886)
+  price BigDecimal min(0)
+  mileage Double min(0)
+  drivetrain String 
+  engine String 
+  transmission String 
+  fuelType String 
+  exteriorColor String
+  interiorColor String
+  vin String  unique
+  location String
+  description String
+  publishedDate Instant
+  adNumber Long  unique
+  views Integer min(0)
+  alloyWheels Boolean
+  sunroof Boolean
+  tintedGlass Boolean
+  ledHeadlights Boolean
+  foldableRoof Boolean
+  towHitch Boolean
+  adjustableSteeringWheel Boolean
+  autoDimmingRearview Boolean
+  heatedFrontSeats Boolean
+  leatherSeats Boolean
+  blindSpotMonitor Boolean
+  adaptiveCruiseControl Boolean
+  navigationSystem Boolean
+  backupCamera Boolean
+  appleCarplay Boolean
+  androidAuto Boolean
+  premiumSoundSystem Boolean
+  isFirstOwn Boolean
+  isAccedFree Boolean
+ }
+relationship ManyToOne {
+ Car{brand} to Brand
+  Car{seller} to Seller
+  Car{type} to CarType 
+  Car{model} to CarModel
+  Car{city} to City 
+    CarModel{brand} to Brand
+  Review{fromUser} to Seller,
+  Review{toUser} to Seller
+}
+ 
+entity Review {
+  createdAt Instant required
+  revVal Integer
+  revTxt String
+}
+
+ 
+
+paginate Car with pagination
+paginate Review with pagination
