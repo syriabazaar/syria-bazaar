@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd
+                        http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+    <!--
+        Added the constraints for entity Car.
+    -->
+    <changeSet id="20250418201831-2" author="jhipster">
+
+        <addForeignKeyConstraint baseColumnNames="brand_id"
+                                 baseTableName="car"
+                                 constraintName="fk_car__brand_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="brand"
+                                 />
+
+        <addForeignKeyConstraint baseColumnNames="seller_id"
+                                 baseTableName="car"
+                                 constraintName="fk_car__seller_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="seller"
+                                 />
+
+        <addForeignKeyConstraint baseColumnNames="type_id"
+                                 baseTableName="car"
+                                 constraintName="fk_car__type_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="car_type"
+                                 />
+
+        <addForeignKeyConstraint baseColumnNames="model_id"
+                                 baseTableName="car"
+                                 constraintName="fk_car__model_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="car_model"
+                                 />
+
+        <addForeignKeyConstraint baseColumnNames="city_id"
+                                 baseTableName="car"
+                                 constraintName="fk_car__city_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="city"
+                                 />
+    </changeSet>
+</databaseChangeLog>

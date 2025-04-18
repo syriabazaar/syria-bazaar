@@ -1,0 +1,37 @@
+{
+  "annotations": {
+    "changelogDate": "20250418201830"
+  },
+  "applications": "*",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "address",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "mobileNo",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "whatsApp",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "facebook",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "insta",
+      "fieldType": "String"
+    }
+  ],
+  "name": "Seller",
+  "relationships": [],
+  "searchEngine": "no"
+}

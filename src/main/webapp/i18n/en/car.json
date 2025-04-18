@@ -1,0 +1,62 @@
+{
+  "syriaBazaarApp": {
+    "car": {
+      "home": {
+        "title": "Cars",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Car",
+        "createOrEditLabel": "Create or edit a Car",
+        "notFound": "No Cars found"
+      },
+      "created": "A new Car is created with identifier { param }",
+      "updated": "A Car is updated with identifier { param }",
+      "deleted": "A Car is deleted with identifier { param }",
+      "delete": {
+        "question": "Are you sure you want to delete Car { id }?"
+      },
+      "detail": {
+        "title": "Car"
+      },
+      "id": "ID",
+      "year": "Year",
+      "price": "Price",
+      "mileage": "Mileage",
+      "drivetrain": "Drivetrain",
+      "engine": "Engine",
+      "transmission": "Transmission",
+      "fuelType": "Fuel Type",
+      "exteriorColor": "Exterior Color",
+      "interiorColor": "Interior Color",
+      "vin": "Vin",
+      "location": "Location",
+      "description": "Description",
+      "publishedDate": "Published Date",
+      "adNumber": "Ad Number",
+      "views": "Views",
+      "alloyWheels": "Alloy Wheels",
+      "sunroof": "Sunroof",
+      "tintedGlass": "Tinted Glass",
+      "ledHeadlights": "Led Headlights",
+      "foldableRoof": "Foldable Roof",
+      "towHitch": "Tow Hitch",
+      "adjustableSteeringWheel": "Adjustable Steering Wheel",
+      "autoDimmingRearview": "Auto Dimming Rearview",
+      "heatedFrontSeats": "Heated Front Seats",
+      "leatherSeats": "Leather Seats",
+      "blindSpotMonitor": "Blind Spot Monitor",
+      "adaptiveCruiseControl": "Adaptive Cruise Control",
+      "navigationSystem": "Navigation System",
+      "backupCamera": "Backup Camera",
+      "appleCarplay": "Apple Carplay",
+      "androidAuto": "Android Auto",
+      "premiumSoundSystem": "Premium Sound System",
+      "isFirstOwn": "Is First Own",
+      "isAccedFree": "Is Acced Free",
+      "brand": "Brand",
+      "seller": "Seller",
+      "type": "Type",
+      "model": "Model",
+      "city": "City"
+    }
+  }
+}

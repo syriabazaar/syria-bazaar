@@ -1,0 +1,189 @@
+{
+  "annotations": {
+    "changelogDate": "20250418201831"
+  },
+  "applications": "*",
+  "fields": [
+    {
+      "fieldName": "year",
+      "fieldType": "Integer",
+      "fieldValidateRules": ["min"],
+      "fieldValidateRulesMin": "1886"
+    },
+    {
+      "fieldName": "price",
+      "fieldType": "BigDecimal",
+      "fieldValidateRules": ["min"],
+      "fieldValidateRulesMin": "0"
+    },
+    {
+      "fieldName": "mileage",
+      "fieldType": "Double",
+      "fieldValidateRules": ["min"],
+      "fieldValidateRulesMin": "0"
+    },
+    {
+      "fieldName": "drivetrain",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "engine",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "transmission",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "fuelType",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "exteriorColor",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "interiorColor",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "vin",
+      "fieldType": "String",
+      "fieldValidateRules": ["unique"]
+    },
+    {
+      "fieldName": "location",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "publishedDate",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "adNumber",
+      "fieldType": "Long",
+      "fieldValidateRules": ["unique"]
+    },
+    {
+      "fieldName": "views",
+      "fieldType": "Integer",
+      "fieldValidateRules": ["min"],
+      "fieldValidateRulesMin": "0"
+    },
+    {
+      "fieldName": "alloyWheels",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "sunroof",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "tintedGlass",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "ledHeadlights",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "foldableRoof",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "towHitch",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "adjustableSteeringWheel",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "autoDimmingRearview",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "heatedFrontSeats",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "leatherSeats",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "blindSpotMonitor",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "adaptiveCruiseControl",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "navigationSystem",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "backupCamera",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "appleCarplay",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "androidAuto",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "premiumSoundSystem",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "isFirstOwn",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "isAccedFree",
+      "fieldType": "Boolean"
+    }
+  ],
+  "name": "Car",
+  "pagination": "pagination",
+  "relationships": [
+    {
+      "otherEntityName": "brand",
+      "relationshipName": "brand",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "seller",
+      "relationshipName": "seller",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "carType",
+      "relationshipName": "type",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "carModel",
+      "relationshipName": "model",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "city",
+      "relationshipName": "city",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "no"
+}
